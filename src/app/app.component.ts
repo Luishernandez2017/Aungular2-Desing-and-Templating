@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  newUser;
+  title = 'Angular Desing and Templating.';
+  sport ="surfing";
+  teams=[
+    {baseball: 'Braves'},
+    {baseball: 'Indians'},
+    {baseball: 'Yankees'}
+
+
+  ]
+  user = {
+    name: "Juan",
+    email: "juan@mail.com"
+  }
 }
