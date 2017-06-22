@@ -8,23 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Design and Templating';
-  property1 = false;
-  property2 = true;
-  property3 = true;
 
-  myClasses ={
-    danger: this.property1,
-    safe: this.property2,
-    changed: this.property3
+  ngStyles ={
+    'color': 'red',
+    'font-weight': 'bold'
   }
-  myFunction(count){
-    console.log(count.value.length);
-  }
-  alertStatus(status){
-    if(status == 'danger'){
-      return true;
-    }
-  }
+  myColor='blue';
 }
 
 
