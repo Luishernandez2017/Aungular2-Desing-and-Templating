@@ -7,13 +7,13 @@
     />
 
 
-    <h3>Style binding: ngStyle</h3>
-    <p [ngStyle]="ngStyles">Style Binding Example</p>
-
-
-    <h3>Style binding: style.</h3>
-    <p [style.color]="myColor">Style Binding Example 2</p>
-
-
-    <h3>Style binding: style. with ternary</h3>
-    <p [style.color]="myColor ? 'orange': 'blue'">Style Binding Example 3</p>
+    <h3>Property binding: example</h3>
+    <div>
+        <img width="300" [src]="logoUrl" *ngIf="toggleState">
+    </div>
+    <div>
+        <button [disabled]="true">Disabled button</button>
+        <button (click)="toggleLogo()">Toggle Logo</button>
+        <button (click)="listener($event)">Click event</button>
+        <button (mouseenter)="imgChger()">Mouse event</button>
+    </div>
