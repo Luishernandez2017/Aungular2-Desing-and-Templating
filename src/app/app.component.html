@@ -11,6 +11,8 @@
     <div>
         <img width="300" [src]="logoUrl" *ngIf="toggleState">
     </div>
+
+    <h3>Event binding: example</h3>
     <div>
         <button [disabled]="true">Disabled button</button>
         <button (click)="toggleLogo()">Toggle Logo</button>
